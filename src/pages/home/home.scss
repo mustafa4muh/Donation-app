@@ -1,0 +1,36 @@
+page-home {
+.ico_z{
+    color:white;
+    zoom:1.5;
+}
+.in_ser{
+    background-color: white;
+    color: black;
+    margin-top: 15%;
+    border-radius: 35px;
+}
+.di_pos{
+    margin: 1.5%;
+    width: 97%;
+    height: 200px;
+    border-radius: 5px;
+    border:1px solid black;
+    background-color: white;
+    
+    font-size: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+.di_pos img{
+    margin: 1.5%;
+    margin-bottom: 0%;
+    width: 97%;
+    height: 120px;
+}
+@media only screen and (max-height: 500px) {
+    .di_pos {
+      width: 20%;
+      height: 150px;
+    }
+  }
+}

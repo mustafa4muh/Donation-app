@@ -1,0 +1,49 @@
+<ion-header style="display: none">
+    <ion-navbar>
+  
+      
+      
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content >
+  <div style=" background-color: #151538;  height: 200px; width:100%" >
+  
+    <div padding style="padding-bottom: 0%">
+    <table style="width: 100%;" >
+      <tr ><td style="width: 50%">
+      
+          <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>
+          
+      </td><td>
+              <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>
+            
+        
+        </td>
+        </tr>
+        </table></div><br>
+  <div style="text-align: center;">   
+        <div style="height: 164px;background-size: cover;width: 100%">  
+          <a class="ti_ce">المشاكل المبلغ عنها</a></div>
+  </div>
+      </div>
+  
+  
+  
+      <div padding style="text-align: right">
+  
+
+
+
+          <div *ngFor="let item of pOST">
+              <div  class="di_pos" (click)="openInf(item['key'])" >
+                <img src="{{item['imgUrl']}}"/>
+                <ion-item><ion-label> <a style="color:black">{{item['address']}}</a></ion-label></ion-item>
+              </div>        
+              </div>
+              
+
+  
+  </div>
+  </ion-content>
+  

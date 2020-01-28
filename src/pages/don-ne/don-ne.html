@@ -1,0 +1,83 @@
+<!--
+  Generated template for the NeArAvPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!--
+  Generated template for the RepoFamPoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-header style="display: none">
+    <ion-navbar>
+  
+  
+      
+      
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content >
+    <div style=" background-color: #151538;  height: 200px; width:100%" >
+
+      <div padding style="padding-bottom: 0%">
+      <table style="width: 100%;" >
+        <tr ><td style="width: 50%">
+            <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>
+            
+        </td><td>
+                <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>
+              
+          
+          </td>
+          </tr>
+          </table></div><br>
+    <div style="text-align: center;">   
+          <div style="background-image:url(../assets/imgs/22121.png);height: 164px;background-size: cover;width: 100%">  
+            <a class="ti_ce">تبرع بحاجة للمحتاجين</a></div>            
+  </div>
+        </div>
+  
+  
+      <div padding>
+
+        <table class="cta_o_td">
+          <tr>
+            <td>
+        <ion-label class="l_inn" >اسم الحاجة</ion-label>
+        <ion-input class="i_inn" type="text" placeholder=""  [(ngModel)]="donaNedData.name"></ion-input>
+      </td></tr>
+      <tr><td >
+          <ion-label class="l_inn">العنوان</ion-label>
+          <ion-input class="i_inn" type="text" placeholder="" [(ngModel)]="donaNedData.plase"></ion-input>
+          </td></tr>
+          <tr><td >
+              <ion-label class="l_inn">رقم الهاتف</ion-label>
+              <ion-input class="i_inn" type="number" placeholder="" [(ngModel)]="donaNedData.phoneNumber"></ion-input>
+              </td></tr>
+        <tr><td >
+        <ion-label class="l_inn">صورة الحاجة</ion-label>
+        <!-- <ion-input class="i_inn" type="File" placeholder="" (Change)=uplode(event)></ion-input> -->
+        <ion-card class="i_inn"><input type="file" accept="image/*" multiple #mulupload (change)="uplode($event)" placeholder="upload a from web file"/></ion-card>
+        
+        </td></tr>
+        
+
+
+        <tr><td >
+<ion-label class="l_inn" id="wqw12" style="text-align: center;display: none;">جاري التحميل يرجى الانتظار</ion-label>
+
+<button ion-button class="b_inn" id="bt12" (click)=saveData(donaNedData)>تبرع</button>
+            </td></tr>
+     
+      </table>
+      </div>
+  
+
+
+
+</ion-content>

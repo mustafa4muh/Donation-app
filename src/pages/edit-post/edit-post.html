@@ -1,0 +1,41 @@
+<ion-header style="display: none">
+  <ion-navbar>
+
+
+    
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+<div style=" background-color: #151538;  height: 200px; width:100%" >
+
+  <div padding style="padding-bottom: 0%">
+  <table style="width: 100%;" >
+    <tr ><td style="width: 50%">
+    
+      <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>
+    
+    </td><td>
+            <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>
+          
+      
+      </td>
+      </tr>
+      </table></div><br>
+<div style="text-align: center;">   
+      <div style="background-image:url(../assets/imgs/22121.png);height: 164px;background-size: cover;width: 100%">  
+        <a class="ti_ce">تعديل منشور او حذفه</a></div>
+</div>
+    </div>
+<div padding>
+  <div>
+  
+    <ion-list  *ngFor="let item of data">
+      <button menuClose ion-item (click)="presentModal1(item['key'])" >{{item['address']}}</button>
+    </ion-list>
+            
+</div>
+</div>
+
+</ion-content>

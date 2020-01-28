@@ -1,0 +1,41 @@
+<ion-header style="display: none">
+    <ion-navbar>
+  
+  
+      
+      
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content >
+  <div style="background-color: #151538; width:100%" padding>
+    
+    <table style="width: 100%;">
+      <tr ><td style="width: 50%">
+      
+            <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>
+            
+      </td><td>
+              <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>
+            
+        
+        </td>
+        </tr>
+        </table>
+        <br>
+        <div style="text-align: center;margin: 0%"><a style="color:white;font-size:30px">حاجات متوفرة للمحتاجين</a></div>
+        <!-- <ion-input dir="rtl" placeholder="بحث" class="in_ser" ></ion-input> -->
+  <br>
+  
+  <div *ngFor="let i of loaaq">
+  <div class="di_pos"  (click)="openInf_ned(i['key'])"><img src="{{i['imgUrl']}}"/><p>{{i['name']}}</p></div>        
+</div>
+      
+          
+  
+  
+  
+      </div>
+        
+  </ion-content>
+  

@@ -1,0 +1,55 @@
+<ion-header style="display: none">
+  <ion-navbar>
+
+
+    
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  
+<div style="background-color: #151538; height: 200px; width:100%" padding>
+  
+  <table style="width: 100%;">
+    <tr ><td style="width: 50%">
+    
+        <!-- <ion-icon name="arrow-forward" class="ico_z"></ion-icon> -->
+    
+    </td><td>
+            <ion-icon menuToggle (click)="jkjk()" name="menu" class="ico_z" style="float: left;"></ion-icon>
+          
+      
+      </td>
+      </tr>
+      </table>
+      <div style="text-align: center;font-size: 30px"><a style="color:white">تبرع لتأكل عائلة فقيرة</a></div>
+<br>
+
+<!-- item['key']
+
+-->
+
+
+<div *ngFor="let item of pOST">
+<div  class="di_pos" (click)="openInf(item['key'])" >
+  <img src="{{item['imgUrl']}}"/>
+  <ion-item><ion-label>{{item['date']}} : <a style="color:black">{{item['address']}}</a></ion-label></ion-item>
+</div>        
+</div>
+
+  
+    
+      
+<br>
+  </div>
+
+</ion-content>
+<ion-footer style="background-color: #151538; height: 40px;text-align: center;  ">
+    
+      <a style="text-align: center; color: white ;font-size: 18px">Code for Iraq 2018</a>
+    
+  </ion-footer>
+
+
+  

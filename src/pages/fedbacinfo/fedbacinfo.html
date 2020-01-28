@@ -1,0 +1,45 @@
+<ion-header style="display: none">
+    <ion-navbar>
+  
+  
+      
+      
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content >
+  <div style=" background-color: #151538;  height: 200px; width:100%" >
+  
+    <div padding style="padding-bottom: 0%">
+    <table style="width: 100%;" >
+      <tr ><td style="width: 50%">
+      
+        <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>
+      
+      </td><td>
+              <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>
+            
+        
+        </td>
+        </tr>
+        </table></div><br>
+  <div style="text-align: center;">   
+        <div style="background-image:url(../assets/imgs/22121.png);height: 164px;background-size: cover;width: 100%">  
+          <a class="ti_ce">التفاصيل</a></div>
+  </div>
+      </div>
+  <div padding  >
+    <div class="di_pos" ><img src="{{aliam['imgUrl']}}" /><ion-item><ion-label><a style="color:black">{{aliam['address']}}</a></ion-label></ion-item>
+  <p>
+    {{aliam['detils']}}
+  </p></div>        
+  </div>
+
+  <button ion-button color="danger" (click)="dellllet(aliam['img'])">حذف المنشور</button>
+
+  
+  </ion-content>
+  
+  
+  
+  

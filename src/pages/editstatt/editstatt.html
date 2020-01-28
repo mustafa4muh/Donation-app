@@ -1,0 +1,66 @@
+<ion-header style="display: none">
+  <ion-navbar>
+
+    
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+<div style=" background-color: #151538;  height: 200px; width:100%" >
+
+  <div padding style="padding-bottom: 0%">
+  <table style="width: 100%;" >
+    <tr ><td style="width: 50%">
+    
+        <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>
+        
+    </td><td>
+            <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>
+          
+      
+      </td>
+      </tr>
+      </table></div><br>
+<div style="text-align: center;">   
+      <div style="height: 164px;background-size: cover;width: 100%">  
+        <a class="ti_ce">تعديل الاحصائيات</a></div>
+</div>
+    </div>
+
+
+
+    <div padding style="text-align: right">
+
+<ion-label class="l_inn">المحافظة</ion-label>
+<ion-input class="i_inn" name="address" type="text" placeholder="" [(ngModel)]="det.provice"></ion-input>
+
+
+<ion-label class="l_inn">القضاء</ion-label>
+<ion-input class="i_inn" name="address" type="text" placeholder="" [(ngModel)]="det.area"></ion-input>
+
+
+<ion-label class="l_inn">عدد العائلات الفقيرة</ion-label>
+<ion-input class="i_inn" name="address" type="number" placeholder="" [(ngModel)]="det.nufampo"></ion-input>
+
+
+<ion-label class="l_inn">عدد الافراد</ion-label>
+<ion-input class="i_inn" name="number" type="textarea" placeholder="" [(ngModel)]="det.nupers"></ion-input>
+
+
+<ion-label class="l_inn">عدد الاطفال</ion-label>
+<ion-input class="i_inn" name="address" type="number" placeholder="" [(ngModel)]="det.numchill"></ion-input>
+
+
+<ion-label class="l_inn">عدد النساء</ion-label>
+<ion-input class="i_inn" name="address" type="number" placeholder="" [(ngModel)]="det.numwemo"></ion-input>
+
+
+<ion-label class="l_inn">عدد النساء بلا معيل</ion-label>
+<ion-input class="i_inn" name="address" type="number" placeholder="" [(ngModel)]="det.nuwemowithout"></ion-input>
+
+
+<button id="bt12" ion-button class="b_inn" (click)=savedata(det)>تعديل</button>
+
+</div>
+</ion-content>

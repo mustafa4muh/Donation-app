@@ -1,0 +1,94 @@
+ <ion-menu [content]="content" (ionOpen)="menuOpened()" >
+    <ion-header style="display: none">
+        <ion-toolbar style="display: none">
+            
+        </ion-toolbar>
+      </ion-header>
+    
+      <ion-content >
+    
+  
+          <div style="background-color: #151538; height: 200px; width:100%" >
+              <br><br><br><br><br> <br> 
+              <ion-icon *ngIf="seco==0" name="log-in" style="color:white;zoom: 1.5;" menuClose (click)=openPage(pages[9])><a style="color:white"> تسجيل الدخول</a>  </ion-icon>
+              
+            </div>
+        <ion-list>
+          
+          <button menuClose ion-item (click)=openPage(pages[0]) >الرئيسية</button>
+         <button menuClose ion-item (click)=openPage(pages[1]) >تبرع</button>
+        <button menuClose ion-item (click)=openPage(pages[2]) >تبليغ عن عائلة فقيرة</button>
+          <button menuClose ion-item (click)=openPage(pages[3]) >تبرع بحاجة للمحتاجين</button>
+          <button menuClose ion-item (click)=openPage(pages[4]) >حاجات متوفرة للمحتاجين</button>
+          <button menuClose ion-item (click)=openPage(pages[5]) >احصائيات</button>
+          <button menuClose ion-item (click)=openPage(pages[11]) >ابلاغ عن مشكلة</button>
+          <button *ngIf="seco==1" menuClose ion-item (click)=Logout() >تسجيل الخروج</button>
+        </ion-list>
+    
+    
+</ion-content>
+<ion-footer padding>
+  
+    <table style="width: 100%;" >
+        <tr ><td style="width: 50%">
+        
+            <!-- <ion-icon name="arrow-forward" class="ico_z"></ion-icon> -->
+            <div style="float: right;" menuClose (click)=openPage(pages[8])><img src="https://firebasestorage.googleapis.com/v0/b/donation-f2a8f.appspot.com/o/icons%2F1232131.png?alt=media&token=7926cab1-d3c6-4a8e-839f-04bebc6ee9cb" width="40px" height="35px"/></div>                
+
+        </td><td dir="">
+                <!-- //setting -->
+            <div  style="float: left;" menuClose (click)=openPageSet(pages[10]) ><img src="https://firebasestorage.googleapis.com/v0/b/donation-f2a8f.appspot.com/o/icons%2Fksfk.png?alt=media&token=0c4ce497-3bd6-4ac9-aa55-fe985b431f02" width="40px" height="45px"/></div>                
+                
+          </td>
+          </tr>
+          </table>
+          </ion-footer>
+  <!--
+  <ion-header style="display: none">
+    <ion-toolbar style="display: none">
+        
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content >
+      <div style="background-color: #151538; height: 200px; width:100%" >
+          <br><br><br><br><br> <br> 
+          <ion-icon *ngIf="seco==0" name="log-in" style="color:white;zoom: 1.5;" menuClose (click)=openPage(pages[9])><a style="color:white"> تسجيل الدخول</a>  </ion-icon>
+          
+        </div>
+    <ion-list>
+      
+      <button menuClose ion-item (click)=openPage(pages[0]) >الرئيسية</button>
+      <button menuClose ion-item (click)=openPage(pages[1]) >تبرع</button>
+      <button menuClose ion-item (click)=openPage(pages[2]) >تبليغ عن عائلة فقيرة</button>
+      <button menuClose ion-item (click)=openPage(pages[3]) >تبرع بحاجة للمحتاجين</button>
+      <button menuClose ion-item (click)=openPage(pages[4]) >حاجات متوفرة للمحتاجين</button>
+      <button menuClose ion-item (click)=openPage(pages[5]) >احصائيات</button>
+      <button menuClose ion-item (click)=openPage(pages[11]) >ابلاغ عن مشكلة</button>
+      <button *ngIf="seco==1" menuClose ion-item (click)=Logout() >تسجيل الخروج</button>
+    </ion-list>
+
+  </ion-content>
+<ion-footer padding>
+  
+    <table style="width: 100%;" >
+        <tr ><td style="width: 50%">
+        -->
+            <!-- <ion-icon name="arrow-forward" class="ico_z"></ion-icon> -->
+           <!--
+            <div style="float: right;" menuClose (click)=openPage(pages[8])><img src="../../assets/imgs/1232131.png" width="40px" height="35px"/></div>                
+
+        </td><td dir="">
+        -->   <!-- //setting -->
+        <!--
+            <div  style="float: left;" menuClose (click)=openPageSet(pages[10]) ><img src="../../assets/imgs/ksfk.png" width="40px" height="45px"/></div>                
+                
+          </td>
+          </tr>
+          </table>
+          </ion-footer>
+</ion-menu> -->
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

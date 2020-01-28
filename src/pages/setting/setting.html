@@ -1,0 +1,42 @@
+<ion-header style="display: none">
+  <ion-navbar>
+
+    
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+<div style=" background-color: #151538;  height: 200px; width:100%" >
+
+  <div padding style="padding-bottom: 0%">
+  <table style="width: 100%;" >
+    <tr ><td style="width: 50%">
+    
+        <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>
+        
+    </td><td>
+            <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>
+          
+      
+      </td>
+      </tr>
+      </table></div><br>
+<div style="text-align: center;">   
+      <div style="height: 164px;background-size: cover;width: 100%">  
+        <a class="ti_ce">الاعدادات</a></div>
+</div>
+    </div>
+
+
+
+  <ion-list>
+    <button menuClose ion-item (click)=openPage(pages[0]) >اضافة منشور</button>
+    <button menuClose ion-item (click)=openPage(pages[1]) >تعديل منشور او حذفه</button>
+    <button menuClose ion-item (click)=openPage(pages[2]) >العائلات المبلغ عنها</button>
+    <button menuClose ion-item (click)=openPage(pages[3]) >حذف حاجة معروضة</button>
+    <button menuClose ion-item (click)=openPage(pages[4]) >تعديل الاحصائيات</button>
+    <button menuClose ion-item (click)=openPage(pages[5]) >المشاكل المبلغ عنها</button>
+  </ion-list>
+
+</ion-content>

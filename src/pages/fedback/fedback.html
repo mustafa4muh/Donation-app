@@ -1,0 +1,53 @@
+<ion-header style="display: none">
+    <ion-navbar>
+  
+      
+      
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content >
+  <div style=" background-color: #151538;  height: 200px; width:100%" >
+  
+    <div padding style="padding-bottom: 0%">
+    <table style="width: 100%;" >
+      <tr ><td style="width: 50%">
+      
+          <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>
+          
+      </td><td>
+              <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>
+            
+        
+        </td>
+        </tr>
+        </table></div><br>
+  <div style="text-align: center;">   
+        <div style="height: 164px;background-size: cover;width: 100%">  
+          <a class="ti_ce">ابلاغ عن مشكلة</a></div>
+  </div>
+      </div>
+  
+  
+  
+      <div padding style="text-align: right">
+  
+  <ion-label class="l_inn">موضوع المشكلة</ion-label>
+  <ion-input class="i_inn" name="address" type="text" placeholder="" [(ngModel)]="det.address"></ion-input>
+  
+  
+  <ion-label class="l_inn">التفاصيل</ion-label>
+  <ion-input class="i_inn" name="detils" type="textarea" placeholder="" [(ngModel)]="det.detils"></ion-input>
+  
+  <ion-label class="l_inn">صورة المشكلة</ion-label>
+  <!-- <ion-input class="i_inn" type="File" placeholder="" (Change)=uplode(event)></ion-input> -->
+  <ion-card class="i_inn"><input type="file" accept="image/*" multiple #mulupload (change)="uplode($event)" placeholder="upload a from web file"/></ion-card>
+  
+  <button id="bt12" ion-button class="b_inn" (click)= updata(det)>ابلاغ</button>
+<ion-label class="l_inn" id="wqw12" style="text-align: center;display: none;">جاري التحميل يرجى الانتظار</ion-label>
+
+  
+  
+  </div>
+  </ion-content>
+  

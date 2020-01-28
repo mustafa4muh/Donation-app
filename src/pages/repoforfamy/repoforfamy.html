@@ -1,0 +1,47 @@
+<ion-header style="display: none">
+  <ion-navbar>
+
+
+    
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+<div style=" background-color: #151538;  height: 200px; width:100%" >
+
+  <div padding style="padding-bottom: 0%">
+  <table style="width: 100%;" >
+    <tr ><td style="width: 50%">
+    
+      <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>
+    
+    </td><td>
+            <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>
+          
+      
+      </td>
+      </tr>
+      </table></div><br>
+<div style="text-align: center;">   
+      <div style="background-image:url(../assets/imgs/22121.png);height: 164px;background-size: cover;width: 100%">  
+        <a class="ti_ce">العائلات المبلغ عنها</a></div>
+</div>
+    </div>
+<div padding>
+
+    
+  <div  *ngFor="let item of looosos">
+    <div  class="di_pos" (click)="removeop(item['key'])" >
+      <ion-item><ion-label>اسم رب الاسرة : <a style="color:black">{{item['name']}}</a></ion-label></ion-item>
+      <ion-item><ion-label>عدد الافراد : <a style="color:black">{{item['number']}}</a></ion-label></ion-item>
+      <ion-item><ion-label>العنوان : <a style="color:black">{{item['plase']}}</a></ion-label></ion-item>
+      <ion-item><ion-label>رقم الهاتف : <a style="color:black">{{item['phoneNumber']}}</a></ion-label></ion-item>
+    </div>        
+    </div>
+  
+
+</div>
+
+</ion-content>
+

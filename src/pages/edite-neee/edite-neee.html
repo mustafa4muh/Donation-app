@@ -1,0 +1,48 @@
+<ion-header style="display: none">
+    <ion-navbar>
+  
+  
+      
+      
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content >
+  <div style=" background-color: #151538;  height: 200px; width:100%" >
+  
+    <div padding style="padding-bottom: 0%">
+    <table style="width: 100%;" >
+      <tr ><td style="width: 50%">
+      
+        <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>
+      
+      </td><td>
+              <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>
+            
+        
+        </td>
+        </tr>
+        </table></div><br>
+  <div style="text-align: center;">   
+        <div style="background-image:url(../assets/imgs/22121.png);height: 164px;background-size: cover;width: 100%">  
+          <a class="ti_ce">حذف حاجة معروضة</a></div>
+  </div>
+      </div>
+  <div padding>
+
+
+      <div  *ngFor="let item of klkl">
+          <div  class="di_pos" (click)= "presentConfirm(item['key'],item['img'])">
+            <ion-item><ion-label>اسم الحاجة : <a style="color:black">{{item['name']}}</a></ion-label></ion-item>
+            <ion-item><ion-label>التاريخ : <a style="color:black">{{item['date']}}</a></ion-label></ion-item>
+            <ion-item><ion-label><a style="color:black">اضغط للحذف</a></ion-label></ion-item>
+          </div>        
+          </div>
+
+    
+  
+  </div>
+  
+  </ion-content>
+  
+  

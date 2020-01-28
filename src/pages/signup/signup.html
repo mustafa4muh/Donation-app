@@ -1,0 +1,48 @@
+<ion-header style="display: none">
+  <ion-navbar>
+
+    
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+<div style=" background-color: #151538;  height: 200px; width:100%" >
+
+  <div padding style="padding-bottom: 0%">
+  <table style="width: 100%;" >
+    <tr ><td style="width: 50%">
+    
+        <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>
+        
+    </td><td>
+            <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>
+          
+      
+      </td>
+      </tr>
+      </table></div><br>
+<div style="text-align: center;">   
+      <div style="height: 164px;background-size: cover;width: 100%">  
+        <a class="ti_ce">التسجيل</a></div>
+</div>
+    </div>
+
+
+
+    <div padding style="text-align: right">
+
+
+
+<ion-label class="l_inn">الايميل</ion-label>
+<ion-input class="i_inn" name="user" type="email" placeholder="" [(ngModel)]="dalo.email"></ion-input>
+
+
+<ion-label class="l_inn">كلمة المرور</ion-label>
+<ion-input class="i_inn" name="pass" type="password" placeholder="" [(ngModel)]="dalo.pass"></ion-input>
+
+<button ion-button class="b_inn" (click)=savedata(dalo)>تسجيل </button>
+
+
+</div>
+</ion-content>

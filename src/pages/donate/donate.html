@@ -1,0 +1,67 @@
+<ion-header style="display: none">
+    <ion-navbar>
+  
+  
+      
+      
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content >
+  <div style=" background-color: #151538;  height: 200px; width:100%" >
+
+    <div padding style="padding-bottom: 0%">
+    <table style="width: 100%;" >
+      <tr ><td style="width: 50%">
+      
+          <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>
+          
+      </td><td>
+              <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>
+            
+        
+        </td>
+        </tr>
+        </table></div><br>
+  <div style="text-align: center;">   
+        <div style="background-image:url(../assets/imgs/22121.png);height: 164px;background-size: cover;width: 100%">  
+          <a class="ti_ce">تبرع</a></div>
+</div>
+      </div>
+
+      <div padding style="text-align: right">
+
+<ion-label class="l_inn">اسم المتبرع</ion-label>
+<ion-input class="i_inn" name="name" type="text" placeholder="" [(ngModel)]="donaData.name"></ion-input>
+
+
+<ion-label class="l_inn">مكان التبرع</ion-label>
+<ion-input class="i_inn" name="palse" type="text" placeholder="" [(ngModel)]="donaData.palse"></ion-input>
+
+<ion-label class="l_inn">رقم الهاتف</ion-label>
+<ion-input class="i_inn"  name="phonenumber" type="number" placeholder="" [(ngModel)]="donaData.phonenumber"></ion-input>
+
+<ion-label class="l_inn">نوع التبرع</ion-label>
+<ion-input class="i_inn" name="type" style="margin-right: 10%" list="waaaay" name="waaaay" [(ngModel)]="donaData.type"></ion-input>
+<datalist id="waaaay">
+    <option value="مالي" class="i_inn">مالي</option>
+    <option value="طعام" class="i_inn">طعام</option>
+    <option value="مواد او ادوات" class="i_inn">مواد او ادوات</option>    
+    <option value="اخرى" class="i_inn">اخرى</option>    
+  </datalist>
+
+
+
+<div style="display:none">
+  <ion-label class="l_inn">اخرى</ion-label>
+  <ion-input class="i_inn" type="text" placeholder=""></ion-input>
+</div>
+
+<button ion-button class="b_inn" (click)=savedata(donaData)>تبرع</button>
+
+
+<ion-label class="l_inn" id="error" style="display:none"></ion-label>
+
+</div>
+  </ion-content>
+  

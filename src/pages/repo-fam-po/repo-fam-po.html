@@ -1,0 +1,84 @@
+<!--
+  Generated template for the RepoFamPoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+  <ion-header style="display: none">
+    <ion-navbar>
+  
+  
+      
+      
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content >
+      
+      <div style=" background-image:url(../assets/imgs/214343.png);background-color: #151538;  height: 200px; width:100%" >
+
+          <div padding style="padding-bottom: 0%">
+          <table style="width: 100%;" >
+            <tr ><td style="width: 50%">
+            
+                <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>
+          
+            </td><td>
+                    <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>
+                  
+              
+              </td>
+              </tr>
+              </table></div><br>
+        <div style="text-align: center;">   
+              <div style="height: 164px;background-size: cover;width: 100%">  
+                <a class="ti_ce">تبليغ عن عائلة فقيرة</a></div>            
+      </div>
+            </div>
+      
+      
+      
+      
+    
+  
+  
+      <div padding>
+
+        <table class="cta_o_td" >
+          <tr>
+            <td>
+        <ion-label class="l_inn" >اسم رب العائلة</ion-label>
+        <ion-input class="i_inn" name="name" type="text" placeholder="" [(ngModel)]="donaData.name"></ion-input>
+      </td><td >
+        <ion-label class="l_inn">عدد الافراد</ion-label>
+        <ion-input class="i_inn" name="number" type="number" placeholder="" [(ngModel)]="donaData.number"></ion-input>
+      </td></tr>
+        <tr><td  colspan="2">
+        <ion-label class="l_inn">عنوان العائلة</ion-label>
+        <ion-input class="i_inn"name="plase" type="text" placeholder="" [(ngModel)]="donaData.plase"></ion-input>
+        </td></tr>
+        <tr><td colspan="2">
+        <ion-label class="l_inn">رقم الهاتف</ion-label>
+        <ion-input class="i_inn" name="phoneNumber" type="number" placeholder="" [(ngModel)]="donaData.phoneNumber"></ion-input>
+        
+        </td></tr>
+        <tr><td  colspan="2">
+        <div style="display:none">
+          <ion-label class="l_inn">اخرى</ion-label>
+          <ion-input class="i_inn" type="text" placeholder=""></ion-input>
+        </div>
+        </td></tr>
+        <tr><td  colspan="2">
+        <button ion-button class="b_inn" (click)=saveData(donaData)>تبليغ</button>
+        <ion-label class="l_inn" id="error" style="display:none"></ion-label>
+      </td>
+      </tr>
+      </table>
+      </div>
+  
+
+
+
+</ion-content>
