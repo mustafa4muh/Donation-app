@@ -22,7 +22,7 @@ export class DonatePage {
 donaData={
   name: "",
   palse: "",
-  phonenumber:Number,
+  phonenumber:"",
   type:""
 }
 
@@ -43,7 +43,13 @@ donaData={
 
   savedata(donaData){
 
-  this.db.list('donaTe').push(donaData).then(()=>{
+  
+//console.log(donaData);
+if(donaData.name==""||donaData.palse==""||donaData.type==""||donaData.phonenumber==""){
+  //console.log("اكمل المعلومات");
+  this.presentAlertforinfo();
+}else{
+this.db.list('donaTe').push(donaData).then(()=>{
     this.presentAlert();
     this.navCtrl.setRoot(HomePage);
 
@@ -54,7 +60,7 @@ donaData={
     document.getElementById("error").innerText = "هناك خطأ";
   }
     )
-
+}
   }
   ionViewDidLoad() {
    // console.log('ionViewDidLoad DonatePage');
@@ -70,6 +76,14 @@ donaData={
     let alert = this.alertCtrl.create({
       title: 'شكرا لك',
       subTitle: 'سيتم الاتصال بك قريبا',
+      buttons: ['اغلاق']
+    });
+    alert.present();
+  }
+  presentAlertforinfo() {
+    let alert = this.alertCtrl.create({
+      title: 'خطأ',
+      subTitle: 'يرجى اكمال المعلومات',
       buttons: ['اغلاق']
     });
     alert.present();

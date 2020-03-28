@@ -26,6 +26,7 @@ import { ModelllPage } from '../pages/modelll/modelll';
 import { FedbackPage } from '../pages/fedback/fedback';
 import { FedbackAdminPage } from '../pages/fedback-admin/fedback-admin';
 import { FedbacinfoPage } from '../pages/fedbacinfo/fedbacinfo';
+import { DongetPage } from '../pages/donget/donget'
 
 
 import { AngularFireModule } from '@angular/fire';
@@ -74,6 +75,7 @@ export const environment = {
     FedbackPage,
     FedbackAdminPage,
     FedbacinfoPage,
+    DongetPage
 
   ],
   imports: [
@@ -109,6 +111,7 @@ export const environment = {
     FedbackPage,
     FedbackAdminPage,
     FedbacinfoPage,
+    DongetPage
 
 
   ],

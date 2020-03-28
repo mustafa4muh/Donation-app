@@ -10,6 +10,7 @@ import { FedbackAdminPage } from '../fedback-admin/fedback-admin';
 import { LoginPage } from '../login/login';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { HomePage } from '../home/home';
+import { DongetPage } from '../donget/donget';
 
 
 
@@ -50,6 +51,7 @@ export class SettingPage {
       { title: 'RepoFamPo', component: EditeNeeePage },//3
       { title: 'DonNe', component: EditstattPage },//4
       { title: 'FedbackAdmin', component: FedbackAdminPage },//5
+      { title: 'Donget', component: DongetPage },//6
       
     ];
   

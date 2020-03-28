@@ -60,7 +60,7 @@ this.presentConfirm(key)
   presentConfirm(key) {
     let alert = this.alErt.create({
       title: 'حذف العائلة',
-      message: 'هل تريج حذف العائلة؟',
+      message: 'هل تريد حذف العائلة؟',
       buttons: [
         {
           text: 'لا',
