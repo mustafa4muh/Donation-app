@@ -255,7 +255,7 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\Users\AlMehmdy\Desktop\Donation\src\pages\login\login.html"*/'<ion-header style="display: none">\n  <ion-navbar>\n\n    \n    \n  </ion-navbar>\n</ion-header>\n\n<ion-content >\n<div style=" background-color: #151538;  height: 200px; width:100%" >\n\n  <div padding style="padding-bottom: 0%">\n  <table style="width: 100%;" >\n    <tr ><td style="width: 50%">\n    \n        <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>\n        \n    </td><td>\n            <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>\n          \n      \n      </td>\n      </tr>\n      </table></div><br>\n<div style="text-align: center;">   \n      <div style="height: 164px;background-size: cover;width: 100%">  \n        <a class="ti_ce">تسجيل الدخول</a></div>\n</div>\n    </div>\n\n\n\n    <div padding style="text-align: right">\n\n<ion-label class="l_inn">اسم المستخدم</ion-label>\n<ion-input class="i_inn" name="user" type="text" placeholder="" [(ngModel)]="dalo.user"></ion-input>\n\n\n<ion-label class="l_inn">كلمة المرور</ion-label>\n<ion-input class="i_inn" name="pass" type="password" placeholder="" [(ngModel)]="dalo.pass"></ion-input>\n\n<button ion-button class="b_inn" (click)=loginin(dalo)>تسجيل الدخول</button>\n<button ion-button class="b_inn" *ngIf="enablee == 0" (click)=openSignUp()>تسجيل جديد</button>\n\n</div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\AlMehmdy\Desktop\Donation\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\AlMehmdy\Desktop\Donation\src\pages\login\login.html"*/'<ion-header style="display: none">\n  <ion-navbar>\n\n    \n    \n  </ion-navbar>\n</ion-header>\n\n<ion-content >\n<div style=" background-color: #151538;  height: 200px; width:100%" >\n\n  <div padding style="padding-bottom: 0%">\n  <table style="width: 100%;" >\n    <tr ><td style="width: 50%">\n    \n        <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>\n        \n    </td><td>\n            <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>\n          \n      \n      </td>\n      </tr>\n      </table></div><br>\n<div style="text-align: center;">   \n      <div style="height: 164px;background-size: cover;width: 100%">  \n        <a class="ti_ce">تسجيل الدخول</a></div>\n</div>\n    </div>\n\n\n\n    <div padding style="text-align: right">\n\n<ion-label class="l_inn">الايميل</ion-label>\n<ion-input class="i_inn" name="user" type="text" placeholder="" [(ngModel)]="dalo.user"></ion-input>\n\n\n<ion-label class="l_inn">كلمة المرور</ion-label>\n<ion-input class="i_inn" name="pass" type="password" placeholder="" [(ngModel)]="dalo.pass"></ion-input>\n\n<button ion-button class="b_inn" (click)=loginin(dalo)>تسجيل الدخول</button>\n<button ion-button class="b_inn" *ngIf="enablee == 0" (click)=openSignUp()>تسجيل جديد</button>\n\n</div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\AlMehmdy\Desktop\Donation\src\pages\login\login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__angular_fire_auth__["a" /* AngularFireAuth */]])
     ], LoginPage);
@@ -673,108 +673,10 @@ var DonNePage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DonatePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_fire_auth__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__login_login__ = __webpack_require__(19);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-/**
- * Generated class for the DonatePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var DonatePage = /** @class */ (function () {
-    function DonatePage(navCtrl, navParams, alertCtrl, db, auth) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.alertCtrl = alertCtrl;
-        this.db = db;
-        this.auth = auth;
-        this.donaData = {
-            name: "",
-            palse: "",
-            phonenumber: Number,
-            type: ""
-        };
-        //var admm;
-        var user = this.auth.auth.currentUser;
-        if (user) {
-            // User is signed in.
-            //  admm = user.displayName;
-            //console.log(admm);
-        }
-        else {
-            // No user is signed in.
-            //admm = "unadmin";
-            //console.log(admm);
-            this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__login_login__["a" /* LoginPage */]); //not read this error  
-        }
-    }
-    DonatePage.prototype.savedata = function (donaData) {
-        var _this = this;
-        this.db.list('donaTe').push(donaData).then(function () {
-            _this.presentAlert();
-            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */]);
-        })
-            .catch(function (error) {
-            document.getElementById("error").style.display = "block";
-            document.getElementById("error").style.textAlign = "center";
-            document.getElementById("error").innerText = "هناك خطأ";
-        });
-    };
-    DonatePage.prototype.ionViewDidLoad = function () {
-        // console.log('ionViewDidLoad DonatePage');
-    };
-    DonatePage.prototype.baCk = function () {
-        this.navCtrl.pop();
-    };
-    DonatePage.prototype.presentAlert = function () {
-        var alert = this.alertCtrl.create({
-            title: 'شكرا لك',
-            subTitle: 'سيتم الاتصال بك قريبا',
-            buttons: ['اغلاق']
-        });
-        alert.present();
-    };
-    DonatePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-donate',template:/*ion-inline-start:"C:\Users\AlMehmdy\Desktop\Donation\src\pages\donate\donate.html"*/'<ion-header style="display: none">\n    <ion-navbar>\n  \n  \n      \n      \n    </ion-navbar>\n  </ion-header>\n  \n  <ion-content >\n  <div style=" background-color: #151538;  height: 200px; width:100%" >\n\n    <div padding style="padding-bottom: 0%">\n    <table style="width: 100%;" >\n      <tr ><td style="width: 50%">\n      \n          <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>\n          \n      </td><td>\n              <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>\n            \n        \n        </td>\n        </tr>\n        </table></div><br>\n  <div style="text-align: center;">   \n        <div style="background-image:url(../assets/imgs/22121.png);height: 164px;background-size: cover;width: 100%">  \n          <a class="ti_ce">تبرع</a></div>\n</div>\n      </div>\n\n      <div padding style="text-align: right">\n\n<ion-label class="l_inn">اسم المتبرع</ion-label>\n<ion-input class="i_inn" name="name" type="text" placeholder="" [(ngModel)]="donaData.name"></ion-input>\n\n\n<ion-label class="l_inn">مكان التبرع</ion-label>\n<ion-input class="i_inn" name="palse" type="text" placeholder="" [(ngModel)]="donaData.palse"></ion-input>\n\n<ion-label class="l_inn">رقم الهاتف</ion-label>\n<ion-input class="i_inn"  name="phonenumber" type="number" placeholder="" [(ngModel)]="donaData.phonenumber"></ion-input>\n\n<ion-label class="l_inn">نوع التبرع</ion-label>\n<ion-input class="i_inn" name="type" style="margin-right: 10%" list="waaaay" name="waaaay" [(ngModel)]="donaData.type"></ion-input>\n<datalist id="waaaay">\n    <option value="مالي" class="i_inn">مالي</option>\n    <option value="طعام" class="i_inn">طعام</option>\n    <option value="مواد او ادوات" class="i_inn">مواد او ادوات</option>    \n    <option value="اخرى" class="i_inn">اخرى</option>    \n  </datalist>\n\n\n\n<div style="display:none">\n  <ion-label class="l_inn">اخرى</ion-label>\n  <ion-input class="i_inn" type="text" placeholder=""></ion-input>\n</div>\n\n<button ion-button class="b_inn" (click)=savedata(donaData)>تبرع</button>\n\n\n<ion-label class="l_inn" id="error" style="display:none"></ion-label>\n\n</div>\n  </ion-content>\n  '/*ion-inline-end:"C:\Users\AlMehmdy\Desktop\Donation\src\pages\donate\donate.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__["a" /* AngularFireDatabase */], __WEBPACK_IMPORTED_MODULE_4__angular_fire_auth__["a" /* AngularFireAuth */]])
-    ], DonatePage);
-    return DonatePage;
-}());
-
-//# sourceMappingURL=donate.js.map
-
-/***/ }),
-
-/***/ 203:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EditPostPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modelll_modelll__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modelll_modelll__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_fire_database__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__login_login__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_fire_auth__ = __webpack_require__(15);
@@ -859,7 +761,7 @@ var EditPostPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 204:
+/***/ 203:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -995,129 +897,7 @@ var ModelllPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 205:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EditstattPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__login_login__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_fire_auth__ = __webpack_require__(15);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-/**
- * Generated class for the EditstattPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var EditstattPage = /** @class */ (function () {
-    function EditstattPage(navCtrl, auth, navParams, db) {
-        this.navCtrl = navCtrl;
-        this.auth = auth;
-        this.navParams = navParams;
-        this.db = db;
-        this.det = {
-            provice: " ",
-            area: " ",
-            nufampo: " ",
-            nupers: " ",
-            numchill: " ",
-            numwemo: " ",
-            nuwemowithout: " ",
-            key: ""
-        };
-        var user = this.auth.auth.currentUser;
-        if (user) {
-            // User is signed in.
-            //  admm = user.displayName;
-            //console.log(admm);
-        }
-        else {
-            // No user is signed in.
-            //admm = "unadmin";
-            //console.log(admm);
-            this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__login_login__["a" /* LoginPage */]); //not read this error  
-        }
-        this.ools();
-        this.det = this.ools();
-    }
-    EditstattPage.prototype.ools = function () {
-        var det = {
-            provice: "",
-            area: "",
-            nufampo: "",
-            nupers: "",
-            numchill: "",
-            numwemo: "",
-            nuwemowithout: "",
-            key: ""
-        };
-        this.db.database.ref("statstic/").on("value", function (snap) {
-            snap.forEach(function (y) {
-                var a = y.val();
-                det.provice = a["provice"];
-                det.area = a["area"];
-                det.nufampo = a["nufampo"];
-                det.nupers = a["nupers"];
-                det.numchill = a["numchill"];
-                det.numwemo = a["numwemo"];
-                det.nuwemowithout = a["nuwemowithout"];
-                // console.log(a["provice"])     
-                det.key = a.key;
-            });
-        });
-        return det;
-    };
-    EditstattPage.prototype.savedata = function (det) {
-        var _this = this;
-        this.db.database.ref("statstic/" + det.key).set({
-            provice: det.provice,
-            area: det.area,
-            nufampo: det.nufampo,
-            nupers: det.nupers,
-            numchill: det.numchill,
-            numwemo: det.numwemo,
-            nuwemowithout: det.nuwemowithout
-        })
-            .then(function () { return _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */]); }).catch(function () { return _this.navCtrl.pop(); });
-    };
-    EditstattPage.prototype.ionViewDidLoad = function () {
-        //console.log('ionViewDidLoad EditstattPage');
-    };
-    EditstattPage.prototype.baCk = function () {
-        this.navCtrl.pop();
-    };
-    EditstattPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-editstatt',template:/*ion-inline-start:"C:\Users\AlMehmdy\Desktop\Donation\src\pages\editstatt\editstatt.html"*/'<ion-header style="display: none">\n  <ion-navbar>\n\n    \n    \n  </ion-navbar>\n</ion-header>\n\n<ion-content >\n<div style=" background-color: #151538;  height: 200px; width:100%" >\n\n  <div padding style="padding-bottom: 0%">\n  <table style="width: 100%;" >\n    <tr ><td style="width: 50%">\n    \n        <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>\n        \n    </td><td>\n            <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>\n          \n      \n      </td>\n      </tr>\n      </table></div><br>\n<div style="text-align: center;">   \n      <div style="height: 164px;background-size: cover;width: 100%">  \n        <a class="ti_ce">تعديل الاحصائيات</a></div>\n</div>\n    </div>\n\n\n\n    <div padding style="text-align: right">\n\n<ion-label class="l_inn">المحافظة</ion-label>\n<ion-input class="i_inn" name="address" type="text" placeholder="" [(ngModel)]="det.provice"></ion-input>\n\n\n<ion-label class="l_inn">القضاء</ion-label>\n<ion-input class="i_inn" name="address" type="text" placeholder="" [(ngModel)]="det.area"></ion-input>\n\n\n<ion-label class="l_inn">عدد العائلات الفقيرة</ion-label>\n<ion-input class="i_inn" name="address" type="number" placeholder="" [(ngModel)]="det.nufampo"></ion-input>\n\n\n<ion-label class="l_inn">عدد الافراد</ion-label>\n<ion-input class="i_inn" name="number" type="textarea" placeholder="" [(ngModel)]="det.nupers"></ion-input>\n\n\n<ion-label class="l_inn">عدد الاطفال</ion-label>\n<ion-input class="i_inn" name="address" type="number" placeholder="" [(ngModel)]="det.numchill"></ion-input>\n\n\n<ion-label class="l_inn">عدد النساء</ion-label>\n<ion-input class="i_inn" name="address" type="number" placeholder="" [(ngModel)]="det.numwemo"></ion-input>\n\n\n<ion-label class="l_inn">عدد النساء بلا معيل</ion-label>\n<ion-input class="i_inn" name="address" type="number" placeholder="" [(ngModel)]="det.nuwemowithout"></ion-input>\n\n\n<button id="bt12" ion-button class="b_inn" (click)=savedata(det)>تعديل</button>\n\n</div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\AlMehmdy\Desktop\Donation\src\pages\editstatt\editstatt.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_5__angular_fire_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__["a" /* AngularFireDatabase */]])
-    ], EditstattPage);
-    return EditstattPage;
-}());
-
-//# sourceMappingURL=editstatt.js.map
-
-/***/ }),
-
-/***/ 206:
+/***/ 204:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1244,7 +1024,129 @@ var EditeNeeePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 207:
+/***/ 205:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EditstattPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__login_login__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_fire_auth__ = __webpack_require__(15);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+/**
+ * Generated class for the EditstattPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var EditstattPage = /** @class */ (function () {
+    function EditstattPage(navCtrl, auth, navParams, db) {
+        this.navCtrl = navCtrl;
+        this.auth = auth;
+        this.navParams = navParams;
+        this.db = db;
+        this.det = {
+            provice: " ",
+            area: " ",
+            nufampo: " ",
+            nupers: " ",
+            numchill: " ",
+            numwemo: " ",
+            nuwemowithout: " ",
+            key: ""
+        };
+        var user = this.auth.auth.currentUser;
+        if (user) {
+            // User is signed in.
+            //  admm = user.displayName;
+            //console.log(admm);
+        }
+        else {
+            // No user is signed in.
+            //admm = "unadmin";
+            //console.log(admm);
+            this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__login_login__["a" /* LoginPage */]); //not read this error  
+        }
+        this.ools();
+        this.det = this.ools();
+    }
+    EditstattPage.prototype.ools = function () {
+        var det = {
+            provice: "",
+            area: "",
+            nufampo: "",
+            nupers: "",
+            numchill: "",
+            numwemo: "",
+            nuwemowithout: "",
+            key: ""
+        };
+        this.db.database.ref("statstic/").on("value", function (snap) {
+            snap.forEach(function (y) {
+                var a = y.val();
+                det.provice = a["provice"];
+                det.area = a["area"];
+                det.nufampo = a["nufampo"];
+                det.nupers = a["nupers"];
+                det.numchill = a["numchill"];
+                det.numwemo = a["numwemo"];
+                det.nuwemowithout = a["nuwemowithout"];
+                // console.log(a["provice"])     
+                det.key = a.key;
+            });
+        });
+        return det;
+    };
+    EditstattPage.prototype.savedata = function (det) {
+        var _this = this;
+        this.db.database.ref("statstic/" + det.key).set({
+            provice: det.provice,
+            area: det.area,
+            nufampo: det.nufampo,
+            nupers: det.nupers,
+            numchill: det.numchill,
+            numwemo: det.numwemo,
+            nuwemowithout: det.nuwemowithout
+        })
+            .then(function () { return _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */]); }).catch(function () { return _this.navCtrl.pop(); });
+    };
+    EditstattPage.prototype.ionViewDidLoad = function () {
+        //console.log('ionViewDidLoad EditstattPage');
+    };
+    EditstattPage.prototype.baCk = function () {
+        this.navCtrl.pop();
+    };
+    EditstattPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-editstatt',template:/*ion-inline-start:"C:\Users\AlMehmdy\Desktop\Donation\src\pages\editstatt\editstatt.html"*/'<ion-header style="display: none">\n  <ion-navbar>\n\n    \n    \n  </ion-navbar>\n</ion-header>\n\n<ion-content >\n<div style=" background-color: #151538;  height: 200px; width:100%" >\n\n  <div padding style="padding-bottom: 0%">\n  <table style="width: 100%;" >\n    <tr ><td style="width: 50%">\n    \n        <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>\n        \n    </td><td>\n            <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>\n          \n      \n      </td>\n      </tr>\n      </table></div><br>\n<div style="text-align: center;">   \n      <div style="height: 164px;background-size: cover;width: 100%">  \n        <a class="ti_ce">تعديل الاحصائيات</a></div>\n</div>\n    </div>\n\n\n\n    <div padding style="text-align: right">\n\n<ion-label class="l_inn">المحافظة</ion-label>\n<ion-input class="i_inn" name="address" type="text" placeholder="" [(ngModel)]="det.provice"></ion-input>\n\n\n<ion-label class="l_inn">القضاء</ion-label>\n<ion-input class="i_inn" name="address" type="text" placeholder="" [(ngModel)]="det.area"></ion-input>\n\n\n<ion-label class="l_inn">عدد العائلات الفقيرة</ion-label>\n<ion-input class="i_inn" name="address" type="number" placeholder="" [(ngModel)]="det.nufampo"></ion-input>\n\n\n<ion-label class="l_inn">عدد الافراد</ion-label>\n<ion-input class="i_inn" name="number" type="textarea" placeholder="" [(ngModel)]="det.nupers"></ion-input>\n\n\n<ion-label class="l_inn">عدد الاطفال</ion-label>\n<ion-input class="i_inn" name="address" type="number" placeholder="" [(ngModel)]="det.numchill"></ion-input>\n\n\n<ion-label class="l_inn">عدد النساء</ion-label>\n<ion-input class="i_inn" name="address" type="number" placeholder="" [(ngModel)]="det.numwemo"></ion-input>\n\n\n<ion-label class="l_inn">عدد النساء بلا معيل</ion-label>\n<ion-input class="i_inn" name="address" type="number" placeholder="" [(ngModel)]="det.nuwemowithout"></ion-input>\n\n\n<button id="bt12" ion-button class="b_inn" (click)=savedata(det)>تعديل</button>\n\n</div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\AlMehmdy\Desktop\Donation\src\pages\editstatt\editstatt.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_5__angular_fire_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__["a" /* AngularFireDatabase */]])
+    ], EditstattPage);
+    return EditstattPage;
+}());
+
+//# sourceMappingURL=editstatt.js.map
+
+/***/ }),
+
+/***/ 206:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1373,7 +1275,7 @@ var FedbacinfoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 208:
+/***/ 207:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1381,7 +1283,7 @@ var FedbacinfoPage = /** @class */ (function () {
 /* unused harmony export ASD */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fedbacinfo_fedbacinfo__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fedbacinfo_fedbacinfo__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_fire_database__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_fire_storage__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase_app__ = __webpack_require__(53);
@@ -1497,7 +1399,7 @@ var ASD = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 209:
+/***/ 208:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1612,6 +1514,104 @@ var FedbackPage = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 209:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DonatePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_fire_auth__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__login_login__ = __webpack_require__(19);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+/**
+ * Generated class for the DonatePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var DonatePage = /** @class */ (function () {
+    function DonatePage(navCtrl, navParams, alertCtrl, db, auth) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.alertCtrl = alertCtrl;
+        this.db = db;
+        this.auth = auth;
+        this.donaData = {
+            name: "",
+            palse: "",
+            phonenumber: Number,
+            type: ""
+        };
+        //var admm;
+        var user = this.auth.auth.currentUser;
+        if (user) {
+            // User is signed in.
+            //  admm = user.displayName;
+            //console.log(admm);
+        }
+        else {
+            // No user is signed in.
+            //admm = "unadmin";
+            //console.log(admm);
+            this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__login_login__["a" /* LoginPage */]); //not read this error  
+        }
+    }
+    DonatePage.prototype.savedata = function (donaData) {
+        var _this = this;
+        this.db.list('donaTe').push(donaData).then(function () {
+            _this.presentAlert();
+            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */]);
+        })
+            .catch(function (error) {
+            document.getElementById("error").style.display = "block";
+            document.getElementById("error").style.textAlign = "center";
+            document.getElementById("error").innerText = "هناك خطأ";
+        });
+    };
+    DonatePage.prototype.ionViewDidLoad = function () {
+        // console.log('ionViewDidLoad DonatePage');
+    };
+    DonatePage.prototype.baCk = function () {
+        this.navCtrl.pop();
+    };
+    DonatePage.prototype.presentAlert = function () {
+        var alert = this.alertCtrl.create({
+            title: 'شكرا لك',
+            subTitle: 'سيتم الاتصال بك قريبا',
+            buttons: ['اغلاق']
+        });
+        alert.present();
+    };
+    DonatePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-donate',template:/*ion-inline-start:"C:\Users\AlMehmdy\Desktop\Donation\src\pages\donate\donate.html"*/'<ion-header style="display: none">\n    <ion-navbar>\n  \n  \n      \n      \n    </ion-navbar>\n  </ion-header>\n  \n  <ion-content >\n  <div style=" background-color: #151538;  height: 200px; width:100%" >\n\n    <div padding style="padding-bottom: 0%">\n    <table style="width: 100%;" >\n      <tr ><td style="width: 50%">\n      \n          <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>\n          \n      </td><td>\n              <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>\n            \n        \n        </td>\n        </tr>\n        </table></div><br>\n  <div style="text-align: center;">   \n        <div style="background-image:url(../assets/imgs/22121.png);height: 164px;background-size: cover;width: 100%">  \n          <a class="ti_ce">تبرع</a></div>\n</div>\n      </div>\n\n      <div padding style="text-align: right">\n\n<ion-label class="l_inn">اسم المتبرع</ion-label>\n<ion-input class="i_inn" name="name" type="text" placeholder="" [(ngModel)]="donaData.name"></ion-input>\n\n\n<ion-label class="l_inn">مكان التبرع</ion-label>\n<ion-input class="i_inn" name="palse" type="text" placeholder="" [(ngModel)]="donaData.palse"></ion-input>\n\n<ion-label class="l_inn">رقم الهاتف</ion-label>\n<ion-input class="i_inn"  name="phonenumber" type="number" placeholder="" [(ngModel)]="donaData.phonenumber"></ion-input>\n\n<ion-label class="l_inn">نوع التبرع</ion-label>\n<ion-input class="i_inn" name="type" style="margin-right: 10%" list="waaaay" name="waaaay" [(ngModel)]="donaData.type"></ion-input>\n<datalist id="waaaay">\n    <option value="مالي" class="i_inn">مالي</option>\n    <option value="طعام" class="i_inn">طعام</option>\n    <option value="مواد او ادوات" class="i_inn">مواد او ادوات</option>    \n    <option value="اخرى" class="i_inn">اخرى</option>    \n  </datalist>\n\n\n\n<div style="display:none">\n  <ion-label class="l_inn">اخرى</ion-label>\n  <ion-input class="i_inn" type="text" placeholder=""></ion-input>\n</div>\n\n<button ion-button class="b_inn" (click)=savedata(donaData)>تبرع</button>\n\n\n<ion-label class="l_inn" id="error" style="display:none"></ion-label>\n\n</div>\n  </ion-content>\n  '/*ion-inline-end:"C:\Users\AlMehmdy\Desktop\Donation\src\pages\donate\donate.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__["a" /* AngularFireDatabase */], __WEBPACK_IMPORTED_MODULE_4__angular_fire_auth__["a" /* AngularFireAuth */]])
+    ], DonatePage);
+    return DonatePage;
+}());
+
+//# sourceMappingURL=donate.js.map
+
+/***/ }),
+
 /***/ 210:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1718,103 +1718,6 @@ var Oia = /** @class */ (function () {
 /***/ }),
 
 /***/ 211:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RepoFamPoPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__login_login__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_fire_auth__ = __webpack_require__(15);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the RepoFamPoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-
-
-var RepoFamPoPage = /** @class */ (function () {
-    function RepoFamPoPage(navCtrl, auth, alertCtrl, navParams, db) {
-        this.navCtrl = navCtrl;
-        this.auth = auth;
-        this.alertCtrl = alertCtrl;
-        this.navParams = navParams;
-        this.db = db;
-        this.donaData = {
-            name: "",
-            number: Number,
-            plase: "",
-            phoneNumber: Number
-        };
-        var user = this.auth.auth.currentUser;
-        if (user) {
-            // User is signed in.
-            //  admm = user.displayName;
-            //console.log(admm);
-        }
-        else {
-            // No user is signed in.
-            //admm = "unadmin";
-            //console.log(admm);
-            this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__login_login__["a" /* LoginPage */]); //not read this error  
-        }
-    }
-    RepoFamPoPage.prototype.saveData = function (donaData) {
-        var _this = this;
-        this.db.list('poorFam').push(donaData).then(function () {
-            _this.presentAlert1();
-            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */]);
-        })
-            .catch(function (error) {
-            document.getElementById("error").style.display = "block";
-            document.getElementById("error").style.textAlign = "center";
-            document.getElementById("error").innerText = "هناك خطأ";
-        });
-    };
-    RepoFamPoPage.prototype.ionViewDidLoad = function () {
-        // console.log('ionViewDidLoad RepoFamPoPage');
-    };
-    RepoFamPoPage.prototype.baCk = function () {
-        this.navCtrl.pop();
-    };
-    RepoFamPoPage.prototype.presentAlert1 = function () {
-        var alert = this.alertCtrl.create({
-            title: 'تم التبليغ',
-            subTitle: 'شكرا لك سيتم الاتصال ومتابعة الموضوع قريبا',
-            buttons: ['اغلاق']
-        });
-        alert.present();
-    };
-    RepoFamPoPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-repo-fam-po',template:/*ion-inline-start:"C:\Users\AlMehmdy\Desktop\Donation\src\pages\repo-fam-po\repo-fam-po.html"*/'<!--\n  Generated template for the RepoFamPoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n\n  <ion-header style="display: none">\n    <ion-navbar>\n  \n  \n      \n      \n    </ion-navbar>\n  </ion-header>\n  \n  <ion-content >\n      \n      <div style=" background-image:url(../assets/imgs/214343.png);background-color: #151538;  height: 200px; width:100%" >\n\n          <div padding style="padding-bottom: 0%">\n          <table style="width: 100%;" >\n            <tr ><td style="width: 50%">\n            \n                <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>\n          \n            </td><td>\n                    <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>\n                  \n              \n              </td>\n              </tr>\n              </table></div><br>\n        <div style="text-align: center;">   \n              <div style="height: 164px;background-size: cover;width: 100%">  \n                <a class="ti_ce">تبليغ عن عائلة فقيرة</a></div>            \n      </div>\n            </div>\n      \n      \n      \n      \n    \n  \n  \n      <div padding>\n\n        <table class="cta_o_td" >\n          <tr>\n            <td>\n        <ion-label class="l_inn" >اسم رب العائلة</ion-label>\n        <ion-input class="i_inn" name="name" type="text" placeholder="" [(ngModel)]="donaData.name"></ion-input>\n      </td><td >\n        <ion-label class="l_inn">عدد الافراد</ion-label>\n        <ion-input class="i_inn" name="number" type="number" placeholder="" [(ngModel)]="donaData.number"></ion-input>\n      </td></tr>\n        <tr><td  colspan="2">\n        <ion-label class="l_inn">عنوان العائلة</ion-label>\n        <ion-input class="i_inn"name="plase" type="text" placeholder="" [(ngModel)]="donaData.plase"></ion-input>\n        </td></tr>\n        <tr><td colspan="2">\n        <ion-label class="l_inn">رقم الهاتف</ion-label>\n        <ion-input class="i_inn" name="phoneNumber" type="number" placeholder="" [(ngModel)]="donaData.phoneNumber"></ion-input>\n        \n        </td></tr>\n        <tr><td  colspan="2">\n        <div style="display:none">\n          <ion-label class="l_inn">اخرى</ion-label>\n          <ion-input class="i_inn" type="text" placeholder=""></ion-input>\n        </div>\n        </td></tr>\n        <tr><td  colspan="2">\n        <button ion-button class="b_inn" (click)=saveData(donaData)>تبليغ</button>\n        <ion-label class="l_inn" id="error" style="display:none"></ion-label>\n      </td>\n      </tr>\n      </table>\n      </div>\n  \n\n\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\AlMehmdy\Desktop\Donation\src\pages\repo-fam-po\repo-fam-po.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_5__angular_fire_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__["a" /* AngularFireDatabase */]])
-    ], RepoFamPoPage);
-    return RepoFamPoPage;
-}());
-
-//# sourceMappingURL=repo-fam-po.js.map
-
-/***/ }),
-
-/***/ 212:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1926,6 +1829,103 @@ var RepoforfamyPage = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 212:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RepoFamPoPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__login_login__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_fire_auth__ = __webpack_require__(15);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the RepoFamPoPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+
+
+
+var RepoFamPoPage = /** @class */ (function () {
+    function RepoFamPoPage(navCtrl, auth, alertCtrl, navParams, db) {
+        this.navCtrl = navCtrl;
+        this.auth = auth;
+        this.alertCtrl = alertCtrl;
+        this.navParams = navParams;
+        this.db = db;
+        this.donaData = {
+            name: "",
+            number: Number,
+            plase: "",
+            phoneNumber: Number
+        };
+        var user = this.auth.auth.currentUser;
+        if (user) {
+            // User is signed in.
+            //  admm = user.displayName;
+            //console.log(admm);
+        }
+        else {
+            // No user is signed in.
+            //admm = "unadmin";
+            //console.log(admm);
+            this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__login_login__["a" /* LoginPage */]); //not read this error  
+        }
+    }
+    RepoFamPoPage.prototype.saveData = function (donaData) {
+        var _this = this;
+        this.db.list('poorFam').push(donaData).then(function () {
+            _this.presentAlert1();
+            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */]);
+        })
+            .catch(function (error) {
+            document.getElementById("error").style.display = "block";
+            document.getElementById("error").style.textAlign = "center";
+            document.getElementById("error").innerText = "هناك خطأ";
+        });
+    };
+    RepoFamPoPage.prototype.ionViewDidLoad = function () {
+        // console.log('ionViewDidLoad RepoFamPoPage');
+    };
+    RepoFamPoPage.prototype.baCk = function () {
+        this.navCtrl.pop();
+    };
+    RepoFamPoPage.prototype.presentAlert1 = function () {
+        var alert = this.alertCtrl.create({
+            title: 'تم التبليغ',
+            subTitle: 'شكرا لك سيتم الاتصال ومتابعة الموضوع قريبا',
+            buttons: ['اغلاق']
+        });
+        alert.present();
+    };
+    RepoFamPoPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-repo-fam-po',template:/*ion-inline-start:"C:\Users\AlMehmdy\Desktop\Donation\src\pages\repo-fam-po\repo-fam-po.html"*/'<!--\n  Generated template for the RepoFamPoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n\n  <ion-header style="display: none">\n    <ion-navbar>\n  \n  \n      \n      \n    </ion-navbar>\n  </ion-header>\n  \n  <ion-content >\n      \n      <div style=" background-image:url(../assets/imgs/214343.png);background-color: #151538;  height: 200px; width:100%" >\n\n          <div padding style="padding-bottom: 0%">\n          <table style="width: 100%;" >\n            <tr ><td style="width: 50%">\n            \n                <ion-icon name="arrow-forward" class="ico_z" (click)=baCk()></ion-icon>\n          \n            </td><td>\n                    <ion-icon menuToggle name="menu" class="ico_z" style="float: left;"></ion-icon>\n                  \n              \n              </td>\n              </tr>\n              </table></div><br>\n        <div style="text-align: center;">   \n              <div style="height: 164px;background-size: cover;width: 100%">  \n                <a class="ti_ce">تبليغ عن عائلة فقيرة</a></div>            \n      </div>\n            </div>\n      \n      \n      \n      \n    \n  \n  \n      <div padding>\n\n        <table class="cta_o_td" >\n          <tr>\n            <td>\n        <ion-label class="l_inn" >اسم رب العائلة</ion-label>\n        <ion-input class="i_inn" name="name" type="text" placeholder="" [(ngModel)]="donaData.name"></ion-input>\n      </td><td >\n        <ion-label class="l_inn">عدد الافراد</ion-label>\n        <ion-input class="i_inn" name="number" type="number" placeholder="" [(ngModel)]="donaData.number"></ion-input>\n      </td></tr>\n        <tr><td  colspan="2">\n        <ion-label class="l_inn">عنوان العائلة</ion-label>\n        <ion-input class="i_inn"name="plase" type="text" placeholder="" [(ngModel)]="donaData.plase"></ion-input>\n        </td></tr>\n        <tr><td colspan="2">\n        <ion-label class="l_inn">رقم الهاتف</ion-label>\n        <ion-input class="i_inn" name="phoneNumber" type="number" placeholder="" [(ngModel)]="donaData.phoneNumber"></ion-input>\n        \n        </td></tr>\n        <tr><td  colspan="2">\n        <div style="display:none">\n          <ion-label class="l_inn">اخرى</ion-label>\n          <ion-input class="i_inn" type="text" placeholder=""></ion-input>\n        </div>\n        </td></tr>\n        <tr><td  colspan="2">\n        <button ion-button class="b_inn" (click)=saveData(donaData)>تبليغ</button>\n        <ion-label class="l_inn" id="error" style="display:none"></ion-label>\n      </td>\n      </tr>\n      </table>\n      </div>\n  \n\n\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\AlMehmdy\Desktop\Donation\src\pages\repo-fam-po\repo-fam-po.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_5__angular_fire_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__["a" /* AngularFireDatabase */]])
+    ], RepoFamPoPage);
+    return RepoFamPoPage;
+}());
+
+//# sourceMappingURL=repo-fam-po.js.map
+
+/***/ }),
+
 /***/ 213:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1934,11 +1934,11 @@ var RepoforfamyPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__add_post_add_post__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__edit_post_edit_post__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__edite_neee_edite_neee__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__edit_post_edit_post__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__edite_neee_edite_neee__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__editstatt_editstatt__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__repoforfamy_repoforfamy__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__fedback_admin_fedback_admin__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__repoforfamy_repoforfamy__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__fedback_admin_fedback_admin__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__login_login__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__angular_fire_auth__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__home_home__ = __webpack_require__(27);
@@ -2274,15 +2274,15 @@ var map = {
 		17
 	],
 	"../pages/donate/donate.module": [
-		600,
+		607,
 		16
 	],
 	"../pages/edit-post/edit-post.module": [
-		601,
+		600,
 		15
 	],
 	"../pages/edite-neee/edite-neee.module": [
-		603,
+		601,
 		14
 	],
 	"../pages/editstatt/editstatt.module": [
@@ -2290,19 +2290,19 @@ var map = {
 		13
 	],
 	"../pages/fedbacinfo/fedbacinfo.module": [
-		604,
+		603,
 		12
 	],
 	"../pages/fedback-admin/fedback-admin.module": [
-		605,
+		604,
 		11
 	],
 	"../pages/fedback/fedback.module": [
-		606,
+		605,
 		10
 	],
 	"../pages/login/login.module": [
-		607,
+		606,
 		9
 	],
 	"../pages/modelll/modelll.module": [
@@ -2322,11 +2322,11 @@ var map = {
 		5
 	],
 	"../pages/repo-fam-po/repo-fam-po.module": [
-		612,
+		613,
 		4
 	],
 	"../pages/repoforfamy/repoforfamy.module": [
-		613,
+		612,
 		3
 	],
 	"../pages/setting/setting.module": [
@@ -2334,11 +2334,11 @@ var map = {
 		2
 	],
 	"../pages/signup/signup.module": [
-		615,
+		616,
 		1
 	],
 	"../pages/statistics/statistics.module": [
-		616,
+		615,
 		0
 	]
 };
@@ -2383,8 +2383,8 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(583);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_donate_donate__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_repo_fam_po_repo_fam_po__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_donate_donate__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_repo_fam_po_repo_fam_po__ = __webpack_require__(212);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_ne_ar_av_ne_ar_av__ = __webpack_require__(210);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__ = __webpack_require__(350);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__ = __webpack_require__(353);
@@ -2397,14 +2397,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_signup_signup__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_setting_setting__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_add_post_add_post__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_edit_post_edit_post__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_edite_neee_edite_neee__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_edit_post_edit_post__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_edite_neee_edite_neee__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_editstatt_editstatt__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_repoforfamy_repoforfamy__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_modelll_modelll__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_fedback_fedback__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_fedback_admin_fedback_admin__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_fedbacinfo_fedbacinfo__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_repoforfamy_repoforfamy__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_modelll_modelll__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_fedback_fedback__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_fedback_admin_fedback_admin__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_fedbacinfo_fedbacinfo__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__angular_fire__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__angular_fire_firestore__ = __webpack_require__(591);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__angular_fire_database__ = __webpack_require__(18);
@@ -2495,23 +2495,23 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/about/about.module#AboutPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/add-post/add-post.module#AddPostPageModule', name: 'AddPostPage', segment: 'add-post', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/don-ne/don-ne.module#DonNePageModule', name: 'DonNePage', segment: 'don-ne', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/donate/donate.module#DonatePageModule', name: 'DonatePage', segment: 'donate', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/edit-post/edit-post.module#EditPostPageModule', name: 'EditPostPage', segment: 'edit-post', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/editstatt/editstatt.module#EditstattPageModule', name: 'EditstattPage', segment: 'editstatt', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/edite-neee/edite-neee.module#EditeNeeePageModule', name: 'EditeNeeePage', segment: 'edite-neee', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/editstatt/editstatt.module#EditstattPageModule', name: 'EditstattPage', segment: 'editstatt', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/fedbacinfo/fedbacinfo.module#FedbacinfoPageModule', name: 'FedbacinfoPage', segment: 'fedbacinfo', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/fedback-admin/fedback-admin.module#FedbackAdminPageModule', name: 'FedbackAdminPage', segment: 'fedback-admin', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/fedback/fedback.module#FedbackPageModule', name: 'FedbackPage', segment: 'fedback', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/donate/donate.module#DonatePageModule', name: 'DonatePage', segment: 'donate', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modelll/modelll.module#ModelllPageModule', name: 'ModelllPage', segment: 'modelll', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ne-ar-av/ne-ar-av.module#NeArAvPageModule', name: 'NeArAvPage', segment: 'ne-ar-av', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ned-info/ned-info.module#NedInfoPageModule', name: 'NedInfoPage', segment: 'ned-info', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/post-info/post-info.module#PostInfoPageModule', name: 'PostInfoPage', segment: 'post-info', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/repo-fam-po/repo-fam-po.module#RepoFamPoPageModule', name: 'RepoFamPoPage', segment: 'repo-fam-po', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/repoforfamy/repoforfamy.module#RepoforfamyPageModule', name: 'RepoforfamyPage', segment: 'repoforfamy', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/repo-fam-po/repo-fam-po.module#RepoFamPoPageModule', name: 'RepoFamPoPage', segment: 'repo-fam-po', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/setting/setting.module#SettingPageModule', name: 'SettingPage', segment: 'setting', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/statistics/statistics.module#StatisticsPageModule', name: 'StatisticsPage', segment: 'statistics', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/statistics/statistics.module#StatisticsPageModule', name: 'StatisticsPage', segment: 'statistics', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_27__angular_fire__["a" /* AngularFireModule */].initializeApp(environment.firebase),
@@ -2570,8 +2570,8 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(353);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_fire_auth__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_donate_donate__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_repo_fam_po_repo_fam_po__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_donate_donate__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_repo_fam_po_repo_fam_po__ = __webpack_require__(212);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_ne_ar_av_ne_ar_av__ = __webpack_require__(210);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_don_ne_don_ne__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_statistics_statistics__ = __webpack_require__(214);
@@ -2580,7 +2580,7 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_about_about__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_login_login__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_setting_setting__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_fedback_fedback__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_fedback_fedback__ = __webpack_require__(208);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
