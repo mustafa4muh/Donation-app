@@ -109,9 +109,24 @@ export class MyApp {
       
 
     ];
+   
+   }
 
+
+   opoppoo(){
+    var assa = this.auth.auth.currentUser;
+    if(assa){
+    this.seco=1;
+    document.getElementById("opiopi").style.display = "none";
+    document.getElementById("qwe12").style.display = "inline";
+    //style="display: inline;"
+    
+  
+  }else{
+    document.getElementById("opiopi").style.display = "inline";
+    document.getElementById("qwe12").style.display = "none";
   }
-
+   }
 klklk(){
   //var klk ;
   //this.auth.auth.currentUser.displayName
@@ -147,8 +162,10 @@ klklk(){
     if(user){
 if (user.displayName == "admin"){
     this.nav.push(page.component);
+   // document.getElementById("asdf").style.display = "inline";
   }else{
 this.prntAlert();
+//document.getElementById("asdf").style.display = "none";
 this.nav.setRoot(HomePage);
   }
     }else{
@@ -199,12 +216,20 @@ this.nav.setRoot(HomePage);
   var assa = this.auth.auth.currentUser;
   if(assa){
   this.seco=1;
+if (assa.displayName == "admin"){
+      document.getElementById("asdf").style.display = "inline";
+
+}
 }else{
 this.seco=0;
 }
+this.opoppoo();
 }
 
   Logout(){
+    document.getElementById("asdf").style.display = "none";
+    document.getElementById("opiopi").style.display = "inline";
+    document.getElementById("qwe12").style.display = "none";
 this.auth.auth.signOut().then(()=>{
   this.seco=0;
 });

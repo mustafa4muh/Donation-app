@@ -4,6 +4,7 @@ import { PostInfoPage } from '../post-info/post-info';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { AngularFireStorage,AngularFireStorageReference } from '@angular/fire/storage';
 import * as firebase from 'firebase/app';
+import { DonatePage } from '../donate/donate';
 
 @Component({
   selector: 'page-home',
@@ -16,8 +17,8 @@ ref:AngularFireStorageReference;
 x:number;
   constructor(public alertCtrl:AlertController ,public menuCont:MenuController ,public navCtrl: NavController,private db:AngularFireDatabase, public Stg:AngularFireStorage,public loadingCtrl: LoadingController) {
     let loader = this.loadingCtrl.create({
-      spinner: 'hide',
-      content: "Please wait..."
+      //spinner: 'hide',
+      content: "الرجاء الانتظار..."
     })
     loader.present();
 
@@ -27,7 +28,7 @@ x:number;
     this.ooppeenn();
    this.pOST =  this.ooppeenn().reverse();
    if(this.pOST != null){
-     setTimeout(()=>{loader.dismiss();},3000)
+     setTimeout(()=>{loader.dismiss();},4000)
    
   }else{
     this.errorrdataa();
@@ -87,12 +88,17 @@ return postar;
 }
 jkjk(){
 }
-
+opopop(){
+  this.navCtrl.push(DonatePage);
+}
   openInf(id){
     this.navCtrl.push(PostInfoPage,{id:id});
     
   }
 
+
+
+  
 
   //loading>>>...
   presentLoading() {

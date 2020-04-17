@@ -1,4 +1,4 @@
- <ion-menu [content]="content" (ionOpen)="menuOpened()" >
+ <ion-menu [content]="content" (ionOpen)="menuOpened()" side="right" >
     <ion-header style="display: none">
         <ion-toolbar style="display: none">
             
@@ -10,7 +10,8 @@
   
           <div style="background-color: #151538; height: 200px; width:100%" >
               <br><br><br><br><br> <br> 
-              <ion-icon *ngIf="seco==0" name="log-in" style="color:white;zoom: 1.5;" menuClose (click)=openPage(pages[9])><a style="color:white"> تسجيل الدخول</a>  </ion-icon>
+              <ion-icon id="opiopi" name="log-in" style="color:white;zoom: 1.5;display: none;" menuClose (click)=openPage(pages[9])><a style="color:white"> تسجيل الدخول</a>  </ion-icon>
+              <!-- <ion-icon *ngIf="seco==0" id="opiopi" name="log-in" style="color:white;zoom: 1.5;display: none;" menuClose (click)=openPage(pages[9])><a style="color:white"> تسجيل الدخول</a>  </ion-icon> -->
               
             </div>
         <ion-list>
@@ -22,7 +23,8 @@
           <button menuClose ion-item (click)=openPage(pages[4]) >حاجات متوفرة للمحتاجين</button>
           <button menuClose ion-item (click)=openPage(pages[5]) >احصائيات</button>
           <button menuClose ion-item (click)=openPage(pages[11]) >ابلاغ عن مشكلة</button>
-          <button *ngIf="seco==1" menuClose ion-item (click)=Logout() >تسجيل الخروج</button>
+          <button  id="qwe12" style="display: inline;" menuClose ion-item (click)=Logout() >تسجيل الخروج</button>
+          <!-- <button *ngIf="seco==1" id="qwe12" style="display: inline;" menuClose ion-item (click)=Logout() >تسجيل الخروج</button> -->
         </ion-list>
     
     
@@ -37,7 +39,7 @@
 
         </td><td dir="">
                 <!-- //setting -->
-            <div  style="float: left;" menuClose (click)=openPageSet(pages[10]) ><img src="https://firebasestorage.googleapis.com/v0/b/donation-f2a8f.appspot.com/o/icons%2Fksfk.png?alt=media&token=0c4ce497-3bd6-4ac9-aa55-fe985b431f02" width="40px" height="45px"/></div>                
+            <div id="asdf" style="display:none; float: left;" menuClose (click)=openPageSet(pages[10]) ><img src="https://firebasestorage.googleapis.com/v0/b/donation-f2a8f.appspot.com/o/icons%2Fksfk.png?alt=media&token=0c4ce497-3bd6-4ac9-aa55-fe985b431f02" width="40px" height="45px"/></div>                
                 
           </td>
           </tr>

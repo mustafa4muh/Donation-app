@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { NedInfoPage } from '../ned-info/ned-info';
 import { AngularFireDatabase } from '@angular/fire/database';
 import * as firebase from 'firebase/app';
@@ -20,7 +20,7 @@ import { AngularFireAuth } from '@angular/fire/auth';
 })
 export class NeArAvPage {
 loaaq:Array<any>=[];
-  constructor(public navCtrl: NavController,public auth:AngularFireAuth ,public navParams: NavParams,public db:AngularFireDatabase) {
+  constructor(public navCtrl: NavController,public auth:AngularFireAuth ,public navParams: NavParams,public db:AngularFireDatabase,public loadingCtrl: LoadingController,public alertCtrl:AlertController) {
     var user = this.auth.auth.currentUser;
     if (user) {
       // User is signed in.
@@ -38,6 +38,31 @@ loaaq:Array<any>=[];
     this.loaaq = this.loaddd();
     //console.log(this.loaaq)
 
+
+    
+      let loader = this.loadingCtrl.create({
+        //spinner: 'hide',
+        content: "الرجاء الانتظار..."
+      })
+      loader.present();
+  
+    
+    
+     if(this.loaaq != null){
+       setTimeout(()=>{loader.dismiss();},4000)
+     
+    }else{
+      this.errorrdataa();
+    }
+    
+  }
+  errorrdataa(){
+    let alert = this.alertCtrl.create({
+      title: 'Error Conect',
+      subTitle: 'Error in load data, please close app.',
+      buttons: ['Ok']
+    });
+    alert.present();
   }
 
   loaddd(){
