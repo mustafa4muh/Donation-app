@@ -86,8 +86,7 @@ ooppeenn(){
 return postar;
 
 }
-jkjk(){
-}
+
 opopop(){
   this.navCtrl.push(DonatePage);
 }

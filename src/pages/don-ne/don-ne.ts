@@ -23,7 +23,7 @@ export class DonNePage {
   donaNedData={
     name: "",
     plase: "",
-    phoneNumber:Number,
+    phoneNumber:"",
     img:"",
     date:""
   }
@@ -71,8 +71,10 @@ export class DonNePage {
        })
   }
   saveData(donaNedData){
-
-
+    if(donaNedData.name==""||donaNedData.plase==""||donaNedData.img==""||donaNedData.phonenumber==""){
+      //console.log("اكمل المعلومات");
+      this.presentAlertforinfo();
+    }else{
     var y = new Date().getFullYear();
     var m = new Date().getMonth()+1;
     var d = new Date().getDate();
@@ -91,8 +93,10 @@ export class DonNePage {
       document.getElementById("error").innerText = "هناك خطأ";
     }
      )
-  
+    
     }
+  
+   }
 
   ionViewDidLoad() {
     //console.log('ionViewDidLoad DonNePage');
@@ -103,7 +107,15 @@ export class DonNePage {
           }
 
 
-                
+          presentAlertforinfo() {
+            let alert = this.alertCtrl.create({
+              title: 'خطأ',
+              subTitle: 'يرجى اكمال المعلومات',
+              buttons: ['اغلاق']
+            });
+            alert.present();
+          }      
+
   presentAlert() {
     let alert = this.alertCtrl.create({
       title: 'شكرا لك',
